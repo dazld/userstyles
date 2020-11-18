@@ -1,44 +1,45 @@
 
-/*@media (prefers-color-scheme: dark) {*/
+@media (prefers-color-scheme: dark) {
 
 
 
-html {
-    filter: invert();
+    html {
+	filter: invert();
+    }
+
+    img, svg:not(.js-calendar-graph-svg) {
+	xopacity: 0.75;
+	filter: invert();
+	transition: opacity 500ms ease-in-out;
+    }
+
+    img:hover {
+	opacity: 1;
+    }
+
+    .IssueLabel {
+	filter: invert();
+    }
+
+
+    .State {
+	filter: invert();
+    }
+
+    .Header {
+	filter: invert();
+    }
+
+    .Header img {
+	filter: none;
+    }
+
+    .filter-item.selected, .filter-item[aria-current]:not([aria-current=false]), .filter-item[aria-selected=true] {
+	filter: invert();
+    }
+
+    .repository-content .btn {
+	filter: invert();
+    }
+x
 }
-
-img, svg:not(.js-calendar-graph-svg) {
-    xopacity: 0.75;
-    filter: invert();
-    transition: opacity 500ms ease-in-out;
-}
-
-img:hover {
-    opacity: 1;
-}
-
-.IssueLabel {
-    filter: invert();
-}
-
-
-.State {
-    filter: invert();
-}
-
-.Header {
-    filter: invert();
-}
-
-.Header img {
-    filter: none;
-}
-
-.filter-item.selected, .filter-item[aria-current]:not([aria-current=false]), .filter-item[aria-selected=true] {
-    filter: invert();
-}
-
-.repository-content .btn {
-    filter: invert();
-}
-/*}*/
