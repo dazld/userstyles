@@ -1,0 +1,149 @@
+:root {
+    --background: #333;
+    --color: #212121;
+}
+
+
+#content {
+    max-width: 60rem;
+    margin: 0 auto;
+    border: unset;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga", "clig";;
+    font-family: Geneva;
+}
+
+.thumbcaption {
+    text-align: right !important;
+}
+
+.thumbcaption .magnify {
+    display: none;
+}
+
+.thumbinner, .thumbimage {
+    border: unset !important;
+}
+
+#mw-panel {
+    display: none;
+}
+
+#mw-head #left-navigation {
+    display: none;
+}
+
+#p-personal {
+    display: none;
+}
+
+#p-views {
+    display: none;
+}
+
+.mw-indicators.mw-body-content {
+    display: none;
+}
+
+#right-navigation {
+    margin: unset;
+}
+
+#p-search {
+    margin: 1rem;
+    position: sticky;
+}
+
+#searchInput::placeholder {
+    color: transparent !important;
+}
+
+#searchInput {
+    border-radius: unset !important;
+    border-left: unset;
+    border-top: unset;
+    border-right: unset;
+}
+
+#searchInput:focus, #simpleSearch:hover #searchInput:focus {
+    box-shadow: unset !important;
+}
+
+
+.suggestions {
+    position: fixed !important;
+    top: 3.25rem !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: unset !important;
+    background: white;
+}
+
+.mw-body-content p {
+    line-height: 1.7;
+}
+
+.infobox {
+    border: unset !important;
+}
+
+.infobox.geography td, .infobox.geography th {
+    border: unset !important;
+}
+
+
+.hatnote {
+    font-style: unset;
+    font-size: 80%;
+    opacity: 0.9;
+    background:
+}
+
+.mw-body h1, h2, h3, h4, h5 {
+    border: unset;
+    font-family: Futura !important;
+}
+
+#footer {
+    display:none;
+}
+
+#siteSub {
+    display: none;
+}
+
+#mw-page-base:before {
+    margin: 1rem;
+    content: 'w';
+    position: absolute;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    a, a:visited {
+        color: #4f565c;
+    }
+
+
+    html {
+        filter: invert();
+    }
+
+    img:not(.mwe-math-fallback-image-inline),
+    svg {
+        opacity: 0.75;
+        filter: invert();
+        transition: opacity 500ms ease-in-out;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+
+}
