@@ -1,149 +1,155 @@
 :root {
-    --background: #333;
-    --color: #212121;
+  --background:#333;
+  --color: #212121;
 }
 
+.mw-mmv-overlay {
+  background-color: transparent;
+}
 
 #content {
-    max-width: 60rem;
-    margin: 0 auto;
-    border: unset;
+  max-width: 60rem;
+  margin: 0 auto;
+  border: unset;
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-variant-ligatures: common-ligatures;
-    font-feature-settings: "liga", "clig";;
-    font-family: Geneva;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga", "clig";
+  font-family: Geneva, sans-serif;
 }
 
 .thumbcaption {
-    text-align: right !important;
+  text-align: right !important;
 }
 
 .thumbcaption .magnify {
-    display: none;
+  display: none;
 }
 
-.thumbinner, .thumbimage {
-    border: unset !important;
+.thumbinner,
+.thumbimage {
+  border: unset !important;
 }
 
 #mw-panel {
-    display: none;
+  display: none;
 }
 
 #mw-head #left-navigation {
-    display: none;
+  display: none;
 }
 
 #p-personal {
-    display: none;
+  display: none;
 }
 
 #p-views {
-    display: none;
+  display: none;
 }
 
 .mw-indicators.mw-body-content {
-    display: none;
+  display: none;
 }
 
 #right-navigation {
-    margin: unset;
+  margin: unset;
 }
 
 #p-search {
-    margin: 1rem;
-    position: sticky;
+  margin: 1rem;
+  position: sticky;
 }
 
 #searchInput::placeholder {
-    color: transparent !important;
+  color: transparent !important;
 }
 
 #searchInput {
-    border-radius: unset !important;
-    border-left: unset;
-    border-top: unset;
-    border-right: unset;
+  border-radius: unset !important;
+  border-left: unset;
+  border-top: unset;
+  border-right: unset;
 }
 
-#searchInput:focus, #simpleSearch:hover #searchInput:focus {
-    box-shadow: unset !important;
+#searchInput:focus,
+#simpleSearch:hover #searchInput:focus {
+  box-shadow: unset !important;
 }
-
 
 .suggestions {
-    position: fixed !important;
-    top: 3.25rem !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: unset !important;
-    background: white;
+  position: fixed !important;
+  top: 3.25rem !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: unset !important;
+  background: white;
 }
 
 .mw-body-content p {
-    line-height: 1.7;
+  line-height: 1.7;
 }
 
 .infobox {
-    border: unset !important;
+  border: unset !important;
 }
 
-.infobox.geography td, .infobox.geography th {
-    border: unset !important;
+.infobox.geography td,
+.infobox.geography th {
+  border: unset !important;
 }
-
 
 .hatnote {
-    font-style: unset;
-    font-size: 80%;
-    opacity: 0.9;
-    background:
+  font-style: unset;
+  font-size: 80%;
+  opacity: 0.9;
+  background: unset;
 }
 
-.mw-body h1, h2, h3, h4, h5 {
-    border: unset;
-    font-family: Futura !important;
+.mw-body h1,
+h2,
+h3,
+h4,
+h5 {
+  border: unset;
+  font-family: Futura, sans-serif !important;
 }
 
 #footer {
-    display:none;
+  display: none;
 }
 
 #siteSub {
-    display: none;
+  display: none;
 }
 
-#mw-page-base:before {
-    margin: 1rem;
-    content: 'w';
-    position: absolute;
+#mw-page-base::before {
+  margin: 1rem;
+  content: 'w';
+  position: absolute;
 }
 
 @media (prefers-color-scheme: dark) {
+  a,
+  a:visited {
+    color: #4f565c;
+  }
 
-    a, a:visited {
-        color: #4f565c;
-    }
+  html {
+    filter: invert();
+  }
 
+  img:not(.mwe-math-fallback-image-inline),
+  svg {
+    opacity: 0.75;
+    filter: invert();
+    transition: opacity 500ms ease-in-out;
+  }
 
-    html {
-        filter: invert();
-    }
-
-    img:not(.mwe-math-fallback-image-inline),
-    svg {
-        opacity: 0.75;
-        filter: invert();
-        transition: opacity 500ms ease-in-out;
-    }
-
-    img:hover {
-        opacity: 1;
-    }
-
+  img:hover {
+    opacity: 1;
+  }
 }
