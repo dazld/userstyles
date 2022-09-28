@@ -33,6 +33,10 @@ h5 {
     filter: invert();
   }
 
+  .sc-classic .header {
+    background: #777;
+  }
+
   .image,
   .header__logo,
   svg {
