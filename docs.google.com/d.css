@@ -16,8 +16,8 @@
 
   .docs-branding-icon-img,
   .docs-titlebar-buttons [role=button],
-  img:not(.mwe-math-fallback-image-inline),
-  svg {
+  img:not(.mwe-math-fallback-image-inline)
+   {
     opacity: 0.75;
     filter: invert();
     transition: opacity 500ms ease-in-out;
