@@ -1,0 +1,29 @@
+:root {
+  --background:#333;
+  --color: #212121;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  a,
+  a:visited {
+    color: #4f565c;
+  }
+
+  html {
+    filter: invert();
+  }
+
+  .docs-branding-icon-img,
+  .docs-titlebar-buttons [role=button],
+  img:not(.mwe-math-fallback-image-inline)
+   {
+    opacity: 0.75;
+    filter: invert();
+    transition: opacity 500ms ease-in-out;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+}
